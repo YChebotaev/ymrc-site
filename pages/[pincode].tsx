@@ -46,21 +46,6 @@ export default function Player() {
           <PlayButton state={playbackState} onClick={playbackChangeHandler} />
           <MoveButton state="forward" onClick={forwardHandler} />
         </div>
-        <div
-          style={{
-            marginTop: 32,
-          }}
-        >
-          <input
-            type="range"
-            min={0}
-            max={1}
-            step={0.05}
-            value={volume}
-            style={{ width: "100%" }}
-            onChange={(e) => setVolume(e.target.valueAsNumber)}
-          />
-        </div>
       </div>
     </main>
   );
